@@ -20,16 +20,14 @@ export default function MainLayout() {
             <h3>Quick Links</h3>
             <ul className="footer-links">
               <li><a href="/">Home</a></li>
-              <li><a href="/about">About</a></li>
               <li><a href="/services">Services</a></li>
-              <li><a href="/contact">Contact</a></li>
             </ul>
           </div>
           
           <div className="footer-section">
             <h3>Contact</h3>
             <p>Email: info@trusthold.com</p>
-            <p>Phone: (123) 456-7890</p>
+            <p>Phone: (233) 59 176 2871</p>
           </div>
         </div>
         

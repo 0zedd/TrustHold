@@ -28,3 +28,27 @@
 .nav-links a:hover {
   color: var(--primary);
 }
+
+.logo {
+  height: 40px;
+  /* Adjust the height as needed */
+  width: auto;
+  /* Maintain aspect ratio */
+}
+
+.nav-brand {
+  display: flex;
+  align-items: center;
+  /* Align logo and text vertically */
+}
+
+.brand-name {
+  font-size: 1.5rem;
+  /* Adjust font size as needed */
+  font-weight: bold;
+  /* Make the text bold */
+  color: var(--primary);
+  /* Use the primary color */
+  margin-left: 0.5rem;
+  /* Space between logo and text */
+}
