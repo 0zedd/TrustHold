@@ -71,3 +71,90 @@ h6 {
 .font-medium {
   font-weight: 500;
 }
+
+@media (max-width: 768px) {
+
+  /* Adjust body font size */
+  body {
+    font-size: var(--text-sm);
+  }
+
+  /* Adjust heading sizes */
+  h1 {
+    font-size: var(--text-2xl);
+  }
+
+  h2 {
+    font-size: var(--text-xl);
+  }
+
+  h3 {
+    font-size: var(--text-lg);
+  }
+
+  /* Navbar adjustments */
+  .navbar {
+    flex-direction: column;
+    /* Stack items vertically */
+    padding: 1rem;
+    /* Adjust padding */
+  }
+
+  .nav-links {
+    flex-direction: column;
+    /* Stack links vertically */
+    gap: 1rem;
+    /* Adjust gap */
+  }
+
+  /* Footer adjustments */
+  .footer-content {
+    grid-template-columns: 1fr;
+    /* Stack footer sections */
+  }
+
+  /* Adjust feature cards */
+  .feature-card {
+    padding: 1rem;
+    /* Adjust padding */
+  }
+
+  /* Adjust service cards */
+  .service-card {
+    margin: 1rem 0;
+    /* Add margin for spacing */
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.phone-link {
+  font-size: 1.7rem;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.phone-link:hover {
+  text-decoration: underline;
+  /* Underline on hover */
+  color: #ffffff;
+  /* Darker shade on hover */
+}
+
+.whatsapp-link {
+  font-size: 1.5rem;
+  color: #00ff5e;
+  text-decoration: none;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.whatsapp-link:hover {
+  text-decoration: underline;
+  /* Underline on hover */
+  color: #f5f7f6;
+  /* Darker shade on hover */
+}

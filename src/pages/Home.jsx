@@ -11,6 +11,7 @@ export default function Home() {
       {/* Hero Section */}
       <section 
         className="hero"
+        id="home"
       >
         <h1>TrustHold</h1>
         <p>Protecting What Matters Most To You</p>
@@ -18,7 +19,7 @@ export default function Home() {
       </section>
 
       {/* Features Section */}
-      <section className="features">
+      <section className="features" id="features">
         <h2>Why Choose TrustHold</h2>
         <div className="features-grid">
           <div className="feature-card">
@@ -57,7 +58,7 @@ export default function Home() {
       </section>
 
       {/* Services Section */}
-      <section className="services">
+      <section className="services" id='services'>
         <h2>Our Services</h2>
         <div className="services-grid">
           {/* Service 1 */}
@@ -140,7 +141,7 @@ export default function Home() {
       </section>
 
       {/* About Preview Section */}
-      <section className="about-preview">
+      <section className="about-preview" id="about">
         <h2>About Us</h2>
         <p>TrustHold is committed to providing the most secure and reliable solutions for your needs.</p>
       </section>

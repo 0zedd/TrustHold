@@ -1,10 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+/* Define the keyframes for the gradient animation */
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background-color: var(--background);
+  background-color: rgba(255, 255, 255, 0.9);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
 }
 
 .nav-brand a {
@@ -15,12 +37,17 @@
 }
 
 .nav-links {
+  color: #350557;
   display: flex;
   gap: 2rem;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: capitalize;
 }
 
 .nav-links a {
-  color: var(--text);
   text-decoration: none;
   transition: color 0.3s ease;
 }
@@ -39,16 +66,75 @@
 .nav-brand {
   display: flex;
   align-items: center;
-  /* Align logo and text vertically */
+  flex-grow: 1;
 }
 
 .brand-name {
-  font-size: 1.5rem;
-  /* Adjust font size as needed */
-  font-weight: bold;
-  /* Make the text bold */
-  color: var(--primary);
-  /* Use the primary color */
+  font-size: 4.5rem;
+  font-weight: 900;
+  font-family: 'Montserrat', sans-serif;
+  background: linear-gradient(90deg, #0000ff, #800080, #4b0082);
+  background-size: 300% 300%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
   margin-left: 0.5rem;
-  /* Space between logo and text */
+  letter-spacing: 1rem;
+  animation: gradientAnimation 5s ease infinite;
+}
+
+.hamburger {
+  display: none;
+  /* Default to hidden */
+  flex-direction: column;
+  /* Stack lines vertically */
+  cursor: pointer;
+  /* Change cursor to pointer */
+  width: 40px;
+  /* Increased width for better visibility */
+  height: 30px;
+  /* Increased height for better visibility */
+  justify-content: center;
+  /* Center the lines vertically */
+  margin-left: auto;
+  /* Push hamburger to the right */
+}
+
+.hamburger div {
+  background-color: #000000;
+  /* Change color to black for better visibility */
+  height: 4px;
+  /* Height of each line */
+  margin: 4px;
+  /* Space between lines */
+  transition: all 0.3s ease;
+  /* Smooth transition for hover effects */
+}
+
+/* Add styles for mobile screens */
+@media (max-width: 768px) {
+
+
+  .nav-links {
+    display: none;
+    /* Hide nav links by default */
+  }
+
+  .hamburger {
+    display: flex;
+    /* Show hamburger icon */
+  }
+
+  .brand-name {
+    font-size: 2rem;
+    /* Reduce font size for smaller screens */
+  }
+}
+
+/* Add styles for when the hamburger menu is active */
+.nav-links.active {
+  display: flex;
+  /* Show nav links when hamburger is active */
+  flex-direction: column;
+  /* Stack links vertically */
 }
