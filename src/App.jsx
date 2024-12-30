@@ -9,7 +9,6 @@ function App() {
       <Routes>
         <Route path="/" element={<MainLayout />}>
           <Route index element={<Home />} />
-          {/* Add more routes as needed */}
         </Route>
       </Routes>
     </Router>
